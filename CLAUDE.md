@@ -7,6 +7,7 @@
 - `commands/` — test-browser command for agent-browser workflow
 - `skills/` — agent-browser skill for snapshot-based verification
 - `rules/` — browser testing conventions
+- `agents/browser-tester.md` — Browser testing agent for mock IPC verification with agent-browser
 
 ## Prerequisites
 
