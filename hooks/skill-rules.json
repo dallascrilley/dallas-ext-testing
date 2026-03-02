@@ -13,6 +13,19 @@
           "(?:test).*(?:browser|e2e|end.to.end)"
         ]
       }
+    },
+    "webapp-testing": {
+      "description": "Interactive webapp testing — navigate, snapshot, interact, verify with agent-browser",
+      "priority": 7,
+      "triggers": {
+        "keywords": ["webapp test", "test webapp", "test ui", "test frontend", "verify ui", "test the app", "test the site"],
+        "keywordPatterns": ["\\bwebapp.test", "test.*(?:ui|frontend|app|site|page)", "verify.*(?:ui|frontend|page)"],
+        "intentPatterns": [
+          "(?:test|verify|check).*(?:webapp|web app|frontend|ui|site|page|app)",
+          "(?:open|navigate|browse).*(?:localhost|app|site).*(?:test|verify|check)",
+          "(?:does|is).*(?:ui|page|app|site).*(?:work|correct|right|broken)"
+        ]
+      }
     }
   },
   "directoryMappings": {
