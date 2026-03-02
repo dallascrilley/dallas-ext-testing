@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "skills": {
+    "test-browser": {
+      "description": "Browser testing with agent-browser and Playwright",
+      "priority": 8,
+      "triggers": {
+        "keywords": ["browser test", "agent-browser", "playwright", "e2e"],
+        "keywordPatterns": ["\\bbrowser.test", "\\bagent.browser\\b", "\\bplaywright\\b", "\\be2e\\b"],
+        "pathPatterns": ["**/e2e/**", "**/*.e2e.*", "**/playwright*"],
+        "intentPatterns": [
+          "(?:run|write|add|create).*(?:browser|e2e|playwright).*(?:test)",
+          "(?:test).*(?:browser|e2e|end.to.end)"
+        ]
+      }
+    }
+  },
+  "directoryMappings": {
+    "tests/e2e": "test-browser"
+  }
+}
