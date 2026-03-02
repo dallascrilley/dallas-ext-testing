@@ -26,6 +26,20 @@
           "(?:does|is).*(?:ui|page|app|site).*(?:work|correct|right|broken)"
         ]
       }
+    },
+    "find-bugs": {
+      "description": "Security audit and bug finding in branch changes",
+      "priority": 7,
+      "triggers": {
+        "keywords": ["find bugs", "security review", "audit code", "vulnerabilities", "security audit", "code audit"],
+        "keywordPatterns": ["find.*bug", "security.*review", "audit.*code", "vulnerabilit", "\\bowasp\\b"],
+        "intentPatterns": [
+          "(?:find|look for|check for|hunt).*(?:bug|vulnerabilit|security|issue)",
+          "(?:security|code).*(?:review|audit|scan)",
+          "(?:review|audit|check).*(?:change|branch|diff).*(?:bug|security|issue)",
+          "(?:are there).*(?:bug|vulnerabilit|security issue)"
+        ]
+      }
     }
   },
   "directoryMappings": {
