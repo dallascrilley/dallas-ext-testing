@@ -1,6 +1,20 @@
 {
   "version": "2.0",
   "skills": {
+    "agent-browser": {
+      "description": "Browser automation workflow using agent-browser CLI for navigation, interaction, snapshots, and verification",
+      "priority": 8,
+      "triggers": {
+        "keywords": ["agent-browser", "browser automation", "navigate browser", "snapshot page", "interact with page"],
+        "keywordPatterns": ["\\bagent-browser\\b", "browser.*automation", "snapshot.*page", "interact.*page"],
+        "pathPatterns": ["**/playwright*", "**/e2e/**"],
+        "intentPatterns": [
+          "(?:open|navigate|browse|interact|snapshot).*(?:page|site|app|browser)",
+          "(?:use|run).*(?:agent-browser|browser automation)",
+          "(?:verify|check|test).*(?:in|with).*(?:browser|agent-browser)"
+        ]
+      }
+    },
     "test-browser": {
       "description": "Browser testing with agent-browser and Playwright",
       "priority": 8,
