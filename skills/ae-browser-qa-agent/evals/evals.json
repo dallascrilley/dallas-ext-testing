@@ -1,0 +1,23 @@
+{
+  "skill_name": "browser-qa-agent",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to set up browser testing for my Next.js app running on localhost:3000. I want to test the login flow, the dashboard, and the settings page. Can you help me set up the whole QA system?",
+      "expected_output": "Creates ai_review/user_stories/ directory with YAML story files, a QA agent definition, an orchestration command, and optionally a justfile recipe. Stories should cover login, dashboard, and settings with specific verification steps.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I already have some user stories in ai_review/user_stories/checkout.yaml. I want to run them against my staging server at staging.myapp.com instead of localhost. How do I modify the stories and run the QA?",
+      "expected_output": "Explains how to update the url fields in the YAML stories, shows how to run the ui-review command or justfile recipe, and mentions the headed/headless options.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to add a browser automation workflow that scrapes job listings from a careers page and saves them to a CSV. This isn't QA testing, it's data collection. How should I structure this using the browser agent patterns?",
+      "expected_output": "Uses the HOP (Higher-Order Prompt) pattern to create a reusable workflow file in .claude/commands/, explains how to invoke it via hop-automate, and distinguishes this from the QA testing pattern. Should use playwright-bowser skill directly rather than the QA agent.",
+      "files": []
+    }
+  ]
+}
