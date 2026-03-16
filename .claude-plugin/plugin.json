@@ -1,37 +1,11 @@
 {
   "name": "dallas-ext-testing",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Browser-based and E2E testing tools for Claude Code. Provides agent-browser workflow, snapshot verification, and browser testing rules.",
   "author": {
     "name": "Dallas Crilley"
   },
   "repository": "https://github.com/dallascrilley/dallas-ext-testing",
   "license": "MIT",
-  "keywords": ["testing", "e2e", "browser", "agent-browser"],
-  "skills": [
-    {
-      "name": "ae-browser-qa-agent",
-      "path": "skills/ae-browser-qa-agent/SKILL.md"
-    },
-    {
-      "name": "agent-browser",
-      "path": "skills/agent-browser/SKILL.md"
-    },
-    {
-      "name": "find-bugs",
-      "path": "skills/find-bugs/SKILL.md"
-    },
-    {
-      "name": "webapp-testing",
-      "path": "skills/webapp-testing/SKILL.md"
-    },
-    {
-      "name": "pinchtab",
-      "path": "skills/pinchtab/SKILL.md"
-    },
-    {
-      "name": "peekaboo",
-      "path": "skills/peekaboo/SKILL.md"
-    }
-  ]
+  "keywords": ["testing", "e2e", "browser", "agent-browser"]
 }
