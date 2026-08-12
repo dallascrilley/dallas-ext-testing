@@ -1,22 +1,16 @@
-# dallas-ext-testing
+# Archived
 
-Browser-based and E2E testing tools for Claude Code.
+This plugin pack was consolidated into **[Outfitter](https://github.com/dallascrilley/outfitter)**.
 
-## Prerequisites
-
-```bash
-npm install -g agent-browser
-agent-browser install
-```
-
-## Contents
-
-- **commands/test-browser** — Map changed files to likely routes and run agent-browser
-- **skills/agent-browser** — Navigate, snapshot, interact, verify workflow
-- **rules/browser-testing** — Prefer agent-browser CLI, snapshot verification patterns
-
-## Installation
+Install packs from the Outfitter monorepo:
 
 ```bash
-claude plugins install ~/Code/dallas-plugin-marketplace/dallas-ext-testing
+git clone https://github.com/dallascrilley/outfitter.git
+cd outfitter
+claude plugins marketplace add "$(pwd)"
+claude plugins install tooling@outfitter
+claude plugins install testing@outfitter
+claude plugins install devops@outfitter
 ```
+
+This repository is archived and no longer maintained.
